@@ -1,9 +1,9 @@
 import json
 def createQuiz():
-    print("Quiz Created")
+    print("Welcome to the quiz")
     n = int(input("Enter the no of questions you want to set for quiz!!!: "))
     dict = {}
-    for i in range(n):  # loop for adding the questions
+    for i in range(n):  # loop for adding the questiions
         k = input("Enter the question: ")
         v = input("Enter the answer: ")
         dict.update({k: v})
@@ -43,4 +43,3 @@ def start():  # To call the strat funtion
 
 
 start()
-#quiz ended
