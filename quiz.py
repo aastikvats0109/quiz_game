@@ -1,4 +1,4 @@
-mport tkinter as tk
+import tkinter as tk
  
 root = tk.Tk()
  
@@ -44,3 +44,4 @@ for quest in q:
  
  and
 root.mainloop()
+print("End OF Quiz")
