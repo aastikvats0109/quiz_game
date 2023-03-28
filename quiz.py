@@ -31,6 +31,8 @@ q = """What is the capital of Italy?, Rome*, Paris-, London-,
 What is the capital of France?, Rome-, Paris*, London-,
 Which of these is not a wonder of the world?, Machu Pichu-,Chichen Itza-,Statue of liberty*,
 In which year was MNREGA act introduced?, 2005-,2006*,2007-,
+What is the capital of USA?, New york-,Budapest-,Washington DC*,
+which of the following is known as happiest country?, Finland*,Holland-,Swtzerland-
 """
  
 q = q.splitlines()
