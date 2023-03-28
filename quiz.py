@@ -39,7 +39,7 @@ def start():  # To call the strat funtion
     elif userInput == "2":
         playQuiz()
     else:
-        print("Your entered wrrong digit.")
+        print("Your entered wrong digit.")
 
 
 start()
