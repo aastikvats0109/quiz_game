@@ -14,13 +14,13 @@ def createQuiz():
 def playQuiz():
     # print("Quiz Started")
     myQuizData = open("./data.json", "r")
-    allQuistions = json.load(myQuizData)
-    question = len(allQuistions)
+    allQuestions = json.load(myQuizData)
+    question = len(allQuestions)
     score = 0
-    for x in allQuistions:
+    for x in allQuestions:
         print(x)
         answer = input("Ans: ")
-        if allQuistions[x] == answer:
+        if allQuestions[x] == answer:
             print("correct")
             score +=1
         else:
