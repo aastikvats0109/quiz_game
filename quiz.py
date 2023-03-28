@@ -1,45 +1,46 @@
-import json
-def createQuiz():
-    print("Welcome To The Quiz")
-    n = int(input("Enter the no of questions you want to set for quiz!!!: "))
-    dict = {}
-    for i in range(n):  # loop for adding the questiions
-        k = input("Enter the question: ")
-        v = input("Enter the answer: ")
-        dict.update({k: v})
-    with open('./data.json', "w") as dataFile:
-        json.dump(dict, dataFile)
-
-
-def playQuiz():
-    # print("Quiz Started")
-    myQuizData = open("./data.json", "r")
-    allQuestions = json.load(myQuizData)
-    question = len(allQuestions)
-    score = 0
-    for x in allQuestions:
-        print(x)
-        answer = input("Ans: ")
-        if allQuestions[x] == answer:
-            print("correct")
-            score +=1
-        else:
-            print("Incorrect")
-
-    myQuizData.close()
-
-    print((score/question)*100)
-
-
-def start():  # To call the strat funtion
-    print("press 1 to create a quiz\npress 2 to play quiz.")
-    userInput = input().strip()
-    if userInput == "1":
-        createQuiz()
-    elif userInput == "2":
-        playQuiz()
+mport tkinter as tk
+ 
+root = tk.Tk()
+ 
+ 
+def check(answer):
+    if answer[-1] == "*":
+        print("Right, it is {}".format(answer[:-1]))
     else:
-        print("Your entered wrong digit.")
+        print("Wrong")
+ 
+ 
+class Question:
+    def _init_(self, question):
+        self.question = question
+        self.label = tk.Label(root, text=question)
+        self.label.pack()
+ 
+ 
+class Answer:
+    def _init_(self, answer):
+        self.answer = answer
+        self.label = tk.Label(root, text=answer[:-1])
+        self.label.bind("<Button-1>", lambda x: check(answer))
+        self.label.pack()
+ 
 
-
-start()
+ 
+ 
+q = """What is the capital of Italy?, Rome*, Paris-, London-,
+What is the capital of France?, Rome-, Paris*, London-
+"""
+ 
+q = q.splitlines()
+q2 = []
+for line in q:
+    q2.append(line.split(","))
+q = q2
+ 
+for quest in q:
+    Question(quest[0])
+    for ans in quest[1:]:
+        Answer(and)
+ 
+ and
+root.mainloop()
