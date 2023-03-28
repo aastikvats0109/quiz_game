@@ -1,6 +1,6 @@
 import json
 def createQuiz():
-    print("Welcome to the quiz")
+    print("Welcome To The Quiz")
     n = int(input("Enter the no of questions you want to set for quiz!!!: "))
     dict = {}
     for i in range(n):  # loop for adding the questiions
