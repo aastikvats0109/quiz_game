@@ -416,5 +416,5 @@ elif a=="E":
         print("Answer is incorrect, You loose!")
         sys.exit()
     else:
-        print("Answer is correct")
+        print("answer is correct")
         print("Total winning: Rs 15000")
