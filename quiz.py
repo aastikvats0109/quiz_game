@@ -1,5 +1,33 @@
 print("QUIZ STARTED")
 print("Instructions for the game:\n 1) You will exit the game if you answer the question wrong\n 2) You will have one lifeline which might be used in every question\n")
+print('1.What is the capital of hungary?')
+print('(A)budapest   (B)Carlo Gambino')
+print('(C)Al Capone       (D)london')
+print('(E)LifeLine(50/50)')
+a=input()
+if a=="C":
+      print("Your Answer is correct \nTotal winning: Rs 1000")
+     
+elif a=="A":
+    print("It is incorrect, You loose!")
+    sys.exit()
+elif a=="B":
+    print("It is incorrect, You loose!")
+    sys.exit()
+elif a=="D":
+    print("It is incorrect, You loose!")
+    sys.exit()
+elif a=="E":
+    print('What was the name of the crime boss who was head of the feared Chicago Outfit?')
+    print('                     ')
+    print('(C)Al Capone     (D)Frank Costello')
+    b=input()
+    if b=="D":
+        print("Answer is incorrect, You loose!")
+        sys.exit()
+    else:
+        print("Answer is correct")
+        print("Total winning: Rs 8000")
 print('1.What is the capital of India?')
 print('(A)Chennai        (B)Banglore')
 print('(C)Ranthambore    (D)New  Delhi')
