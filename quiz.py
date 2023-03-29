@@ -1,4 +1,5 @@
 print("QUIZ STARTED")
+print("Instructions for the game:\n 1) You will exit the game if you answer the question wrong\n 2) You will have one lifeline which might be used in every question\n")
 print('1.What is the capital of India?')
 print('(A)Chennai        (B)Banglore')
 print('(C)Ranthambore    (D)New  Delhi')
