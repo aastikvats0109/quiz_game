@@ -1,3 +1,4 @@
+print("QUIZ STARTED")
 print('1.What is the capital of India?')
 print('(A)Chennai        (B)Banglore')
 print('(C)Ranthambore    (D)New  Delhi')
